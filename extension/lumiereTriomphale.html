@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extensions</title>
+    <link rel="shortcut icon" href="iconeSite.png" />
+    <link rel="stylesheet" href="pageExtension.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> <!-- Integration de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="pageExtension.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Titre du site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../accueil/accueil.html">Accueil</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="boostersDropdown" role="button" data-bs-toggle="dropdown">Boosters</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-muted" href="..\extension\puissanceGenetique.html">Puissance Génétique</a></li>
+                            <li><a class="dropdown-item text-muted" href="..\extension\ileFabuleuse.html">L'île Fabuleuse</a></li>
+                            <li><a class="dropdown-item text-muted" href="..\extension\chocSpatioTemporel.html">Choc Spatio-Temporel</a></li>
+                            <li><a class="dropdown-item text-muted" href="..\extension\lumiereTriomphale.html">Lumière Triomphale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Decks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="height: 70px;"></div>
+
+    <section id="hautDePage">
+        <h1>Détails de l'extension Puissance Génétique</h1>
+        <div style="height: 20px;"></div>
+
+        <section id ="caseBlanche">
+            <h2 id = "hautCase">Changer d'extension</h2>
+            <div id="container-basCase">
+                <span class = "basCase">Extension précédente : <a href ="chocSpatioTemporel.html">Choc Spatio-Temporel</a></span>
+            </div>
+        </section>
+    </section>
+
+    <div style="height: 50px;"></div>
+    <div class="flex-container">
+    <section id = "bm">
+        <ul>
+            <div><h2>Booster Arceus</h2></div>
+            <div><img src="boosterArceus.png" class="rounded mx-auto d-block" alt="image booster arceus" height="150" /></div>
+            <div><p>Nombre de cartes : 96</p></div>
+            <div><p>Date d'apparition : 28 février 2025</p></div>
+        </ul>
+    </section>
+    </div>
+
+    <div style="height: 20px;"></div>
+    <h2>Les cartes :</h2>
+    <div style="height: 10px;"></div>
+
+    <div class="flex-container2">
+    <ul id = "boucleCartes"></ul>
+    </div>
+</body>
+</html>
